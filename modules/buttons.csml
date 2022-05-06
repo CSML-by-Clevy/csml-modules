@@ -1,0 +1,24 @@
+/**
+ * Generate a Yes button with a customizable label
+ */
+fn YesButton(yeslabel) {
+  return Button(Or(yeslabel, "Yes"), value="yes", accepts=["yes", "sure", "yeah", "ok", "sure", "of course", "absolutely", "yep", "y", "indeed"])
+}
+
+/**
+ * Generate a No button with a customizable label
+ */
+fn NoButton(nolabel) {
+  return Button(Or(nolabel, "No"), value="no", accepts=["no", "nah", "nope", "n", "not", "wrong", "ko", "false", "impossible", "nay"])
+}
+
+/**
+ * Generates an array of two buttons that display a yes/no choice to the user
+ * and easily parse the event against accepted values
+ */
+fn YesNoButtons(yeslabel, nolabel) {
+  return [
+    YesButton(yeslabel),
+    NoButton(nolabel),
+  ]
+}
