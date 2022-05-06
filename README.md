@@ -8,6 +8,8 @@ To import these modules in your CSML code, you can use the public raw URL of the
 
 ## Example
 
+In this repository, we added a simple [buttons.csml](modules/buttons.csml) flow. You can add it as a dependency to your chatbot with the following raw github URL: https://raw.githubusercontent.com/CSML-by-Clevy/csml-modules/master/modules/buttons.csml.
+
 ```cpp
 import YesNoButtons from modules/buttons
 
