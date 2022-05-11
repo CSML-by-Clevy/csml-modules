@@ -14,7 +14,7 @@ In this repository, we added a simple [buttons.csml](modules/buttons.csml) flow.
 import YesNoButtons from modules/buttons
 
 start:
-  say Question("Do you like strawberries?", buttons=YesNotButtons("Yes, of course", "Not really"))
+  say Question("Do you like strawberries?", buttons=YesNoButtons("Yes, of course", "Not really"))
   hold
   say "Your answer was: {{event}}"
 ```
